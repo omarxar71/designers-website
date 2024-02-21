@@ -1,0 +1,136 @@
+/* linked csss files  */
+@import url(/css/header.css);
+@import url(/css/landing.css);
+@import url(/css/services.css);
+@import url(/css/protofolio.css);
+@import url(/css/about-us.css);
+@import url(/css/pricing.css);
+@import url(/css/contact-us.css);
+@import url(/css/footer.css);
+
+
+
+/* end of linked css files  */
+/* start global rules  */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+font-family: 'Plus Jakarta Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Work Sans', sans-serif;
+}
+ul{
+    list-style: none;
+}
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* end global rules  */
+
+
+/* start components  */
+.main-heading{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main-heading  h2{
+  padding-top: 100px;
+  margin-bottom: 50px;
+  font-size: 50px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+}
+.main-heading::before{
+  content: "";
+  width: 100px;
+  height: 2px;
+  background-color: black;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  bottom: -180px;
+
+
+}
+.main-heading::after{
+
+    content: "";
+    border: 2px solid #333;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    border-radius: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -188px;
+    background-color: white;
+
+}
+.main-heading  p{
+ padding-left: 40px;
+ line-height: 2;
+ text-align: center;
+ margin: 0 auto 100px;
+ color: #777;
+ max-width: 100%;
+
+}
+/* end components    */
+
+
+
+
+
+/*start global rules */
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: "Work Sans", sans-serif;
+  }
+  /* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+  /*end global rules */
+  /* start varibales  */
+  :root{
+    --main-color1:#19c8fa;
+    --transparent-color:rgb(15 116 143 / 70%);
+    --main-padding:100px;
+  }
+  /* end varibales  */

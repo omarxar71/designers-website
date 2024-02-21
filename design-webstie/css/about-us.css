@@ -1,0 +1,246 @@
+.about{
+    padding-top: var(--main-padding);
+    overflow: hidden;
+    text-align: center;
+    max-width: 2000px;
+}
+.about img{
+    position: relative;
+    bottom: -180px;
+    margin-top: -180px;
+    max-width: 40%;
+}
+.about img{
+    position: relative;
+    bottom: -220px;
+    margin-top: -180px;
+    max-width: 40%;
+}
+.about .main-heading{
+    margin-bottom:-120px ;
+}
+.about p{
+    background-color: var(--transparent-color);
+    color: aliceblue;
+    width: 100%;
+    font-size: 20px;
+}
+/* start statistics  */
+.stats{
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
+    text-align: center;
+    background: url(/images/stats.jpg);
+    background-size: cover;
+    position: relative;
+}
+.stats::before{
+    position: absolute;
+    background-color: rgba(0 0 0 / 70%);
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.stats .container{
+ position:relative; 
+ display: flex;  
+ flex-wrap: wrap;
+}
+.stats .container .box{
+color: white;
+padding: 50px;
+background-color: var(--transparent-color);
+flex-basis: 25%;
+}
+.stats .container .box i{
+color: white;
+height: 40px;
+width: 40px;
+display: flex;
+background-color: black;
+justify-content: center;
+align-items: center;
+border-radius: 50%;
+margin: 0 auto 30px;
+
+}
+
+.stats .container .box .number{
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0 0 20px;
+
+}
+.stats .container .box p{
+color: white;
+font-weight: normal;
+font-size: 14px;
+align-items: center;
+}
+
+/* end stats  */
+/* start skills  */
+.skills{
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
+    
+}
+.skills .container{
+/* display: flex;
+flex-basis: 45%;
+justify-content: space-between; */
+display: grid;
+grid-template-columns: repeat(auto-fill , minmax(300px,1fr));
+    grid-column-gap: 200px;
+
+}
+.skills .container > div > h3{
+    margin:0 0 30px;
+    text-transform: uppercase;
+    font-weight: normal;
+    text-align: center;
+} 
+.skills .container > div > p{
+    margin:0 0 40px;
+    line-height: 2;
+    text-align: center;
+    color: #777;
+}
+
+
+.skills .container .content {
+   line-height: 1.7;
+   display: flex;
+   margin-bottom: 40px;
+   align-items: center;
+    
+    } 
+
+.skills .container .content .text p {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 20px;
+  font-weight: 300;
+  color: #777;
+  margin-bottom: 10px;
+  margin-top: 5px;
+      
+    
+    } 
+.skills .container .content .text{
+line-height: 1.8;
+border-bottom: 1px solid #777;
+      
+    
+    } 
+.skills .container .content img {
+border-radius: 50%;
+width: 25%;
+margin-right: 30px;
+
+    
+
+}
+.skills .test .bullets1{
+    position: absolute;
+    bottom: 30px;
+    transform: translateX(-50%);
+    left: 50%;
+    display: flex;
+        
+    }
+    .skills .test .bullets1 li{
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    border: 1px solid rgb(238, 37, 37);
+    margin: 4px;
+    
+    }
+    .skills .test .bullets1 li.active{
+    background-color: var(--main-color1);
+    z-index: 1;
+    }
+.our-skills .prog-holder{
+    
+    margin-bottom: 40px;
+}
+.our-skills .prog-holder h3{
+   margin-bottom: 15px;
+   font-weight: normal;
+   text-transform: uppercase;
+}
+.our-skills .prog-holder .prog{
+    background-color: #dedadc;
+    height: 30px;
+}
+.our-skills .prog-holder .prog span{
+    display: block;
+    background-color: var(--main-color1);
+    height: 100%;
+    position: relative;
+}
+.our-skills .prog-holder .prog span::before{
+   content: attr(data-progress); 
+   position: absolute;
+   background-color: black;
+   color: white;
+   top: -40px;
+   right: -18px;
+   width: 40px;
+   border-radius: 4px;
+   padding: 4px 0;
+   text-align: center;
+}
+.our-skills .prog-holder .prog span::after{
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 8px;
+    border-color: black transparent transparent transparent;
+    top: -18px;
+    right: -8px;
+}
+/* start quote  */
+.quote{
+padding-top: var(--main-padding);
+padding-bottom: var(--main-padding);
+background-image: url(../images/quote.jpg);
+background-size: cover;
+color: white;
+text-align: center;
+position: relative;
+}
+.quote::before{
+    content: '';
+    position: absolute;
+    background-color: rgba(0 0 0 / 60%);
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+.quote .container{
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+.quote .container q {
+    margin-top: 60px;
+    font-size: 30px;
+    margin-bottom: 20px;
+   
+
+}
+
+
+/* end quote  */
+
+/* end skills  */

@@ -1,0 +1,93 @@
+.services{
+padding-top:var(--main-padding);
+padding-bottom: var(--main-padding);
+}
+@media(min-width:767px){
+    .services-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fill , minmax(450px, 1fr));
+        grid-row-gap: 60px;
+        grid-column-gap: 40px;
+    }
+}
+
+.services-container .serv{
+display: flex;
+}
+.services-container .serv i{
+   margin-right:30px ;
+   font-size: 30px;
+  color: #777;
+  
+}
+.services-container .serv .text h3{
+  margin-bottom: 30px;
+  color: var(--main-color1);
+}
+.services-container .serv .text p{
+    line-height: 1.8;
+}
+/* start design  */
+.design{
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
+    height: 600px;
+    position: relative;
+    background-image: url(/images/background.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.design::before{
+   content: "";
+   position: absolute;
+   background-color: rgba(0 0 0 / 60%);
+   top: 0;
+   right: 0;
+   width: 100%;
+   height: 100%; 
+}
+.design .image {
+position: relative;
+z-index: 2;
+text-align: center;
+flex: 1;
+}
+.design .image img {
+width: 300px;
+text-align: center;
+flex: 1;
+position: relative;
+bottom: -200px;
+
+}
+.design .text{
+    position: relative;
+    z-index: 2;
+    flex: 1;
+}
+.design .text{
+color: #fff;
+padding: 50px;
+background-color: var(--transparent-color);
+}
+.design .text h2{
+   font-weight: normal;
+   margin-bottom: 30px;
+   font-size: 23px;
+   text-transform: uppercase;
+}
+
+.design .text ul li{
+   padding: 10px 0;
+}
+.design .text ul li::before {
+   font-family: "Font Awesome 5 Free";
+   content: '\f390';
+   font-weight: 900;
+   margin-right: 20px;
+   position: relative;
+   top: 1px;
+}
+/* end design  */
